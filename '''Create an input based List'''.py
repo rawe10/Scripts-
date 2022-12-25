@@ -1,17 +1,22 @@
 '''Create an input based List'''
 
-#initialize an empty list which we will use as storage
-emptyList = []
+def makeList(x):
+    #get input based on how many times you want the for loop to run
+    numberOfTimes = int(input('How many items are there? '))
+    print('Enter your value: ')
+    
+    #run i x number of times. x = the variable numberOfTimes
+    for i in range(numberOfTimes):
+        userInput = input()
+        #add the input to the desired list x
+        x.append(userInput)
 
-#get input based on how many times you want the for loop to run
-numberOfTimes = int(input('How many times would you like me to run? '))
+#empty list to be used as storage        
+list1 = []
 
-#for loop to run i x times, x being the variable numberOfTimes
-print('Enter your value: ')
-for i in range(numberOfTimes):
-    userInput = input()
-    #append the input from userInput to emptyList
-    emptyList.append(userInput)
+#call the function 
+makeList(list1)
 
-print('List: ',emptyList)
+#print the created list
+print(list1)
 
