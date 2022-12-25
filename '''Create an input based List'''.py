@@ -3,7 +3,7 @@
 #initialize an empty list which we will use as storage
 emptyList = []
 
-#get input based on how many times you want to run the code
+#get input based on how many times you want the for loop to run
 numberOfTimes = int(input('How many times would you like me to run? '))
 
 #for loop to run i x times, x being the variable numberOfTimes
